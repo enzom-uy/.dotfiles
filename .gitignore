@@ -3,7 +3,6 @@ Code
 Kvantum
 Thunar
 VSCodium
-alacritty
 betterlockscreen
 btop
 cava
@@ -52,3 +51,5 @@ pavucontrol.ini
 starship.toml
 user-dirs.dirs
 user-dirs.locale
+font-manager
+spotify
