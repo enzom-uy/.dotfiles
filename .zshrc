@@ -2,7 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -12,6 +12,7 @@ alias syu="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm"
 alias lg="lazygit"
 alias d="cd ~/dev/"
 alias cl="xprop WM_CLASS"
+alias cel="scrcpy --require-audio --video-bit-rate=8M --max-fps=50 --print-fps"
 
 ## Config files and scripts
 alias kittyconf="nvim ~/.config/kitty/kitty.conf"
@@ -29,3 +30,6 @@ alias bg=". ~/.config/scripts/randombg.sh"
 alias mdrives=". ~/.config/scripts/mountdrives.sh"
 
 export PATH=$PATH:/home/enzom/.spicetify
+
+# Created by `pipx` on 2024-01-26 22:30:38
+export PATH="$PATH:/home/enzom/.local/bin"
