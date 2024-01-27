@@ -33,3 +33,8 @@ export PATH=$PATH:/home/enzom/.spicetify
 
 # Created by `pipx` on 2024-01-26 22:30:38
 export PATH="$PATH:/home/enzom/.local/bin"
+
+if [ -z "$TMUX" ]
+then
+    tmux attach -t TMUX || tmux new -s TMUX
+fi

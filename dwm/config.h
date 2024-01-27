@@ -84,13 +84,12 @@ static const char *browser[]  = { "firefox", NULL };
 static const char *discord[]  = { "discord-canary", NULL };
 static const char *files[]  = { "thunar", NULL };
 static const char *screenshot[]  = { "flameshot", "gui", NULL };
-static const char *mouseless[]  = { "xmouseless", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY|ShiftMask,             XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_l,      focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      focusstack,     {.i = +1 } },
+	{ MODKEY,                       XK_h,      focusstack,     {.i = -1 } },
+	{ MODKEY,                       XK_l,      focusstack,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_g,      togglebar,      {0} },
 	{ MODKEY,                       XK_f,	   zoom,           {0} },
@@ -106,9 +105,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,  spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,                       XK_w,  spawn,          {.v = browser } },
 	{ MODKEY|ShiftMask,                       XK_d,  spawn,          {.v = discord } },
-    { MODKEY|ShiftMask,                       XK_f,  spawn,          {.v = files } },
+    { MODKEY|ShiftMask,                       XK_e,  spawn,          {.v = files } },
     { MODKEY,                       XK_a,  spawn,          {.v = screenshot } },
-    { MODKEY|ShiftMask,                       XK_m,  spawn,          {.v = mouseless } },
     { MODKEY,			XK_Return, spawn,          {.v = termcmd } },
     { MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
