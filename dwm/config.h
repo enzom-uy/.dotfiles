@@ -1,38 +1,11 @@
-<<<<<<< HEAD
-/*See LICENSE file for copyright and license details. */
-// THIS IS A CHANGE
-/* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
-static const unsigned int gappx     = 15;        /* gaps between windows */
-=======
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
->>>>>>> parent of 93df505 (go back to st)
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-<<<<<<< HEAD
-static const int splitstatus        = 1;        /* 1 for split status items */
-static const char *splitdelim        = ";";       /* Character used for separating status */
-static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=10", "Symbols Nerd Font:size=12" };
-static const char dmenufont[]       = "size=12";
-static const char col_gray3[]       = "#f1be9b"; 
-static const char col_gray1[]       = "#020914";
-static const char col_gray2[]       = "#a8856c";
-static const char col_gray4[]       = "#f1be9b"; 
-static const char col_cyan[]        = "#63576E";
-
-static const unsigned int baralpha = 140;
-static const unsigned int borderalpha = 140;
-
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_gray4 },
-=======
 static const char *fonts[]          = { "JetBrains Mono:size=11", "JoyPixels:pixelsize=11:antialias=true:autohint=true"};
 static const char dmenufont[]       = "JetBrains Mono:size=11";
 static char normbgcolor[]           = "#222222";
@@ -45,7 +18,6 @@ static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
->>>>>>> parent of 93df505 (go back to st)
 };
 
 static const unsigned int alphas[][3]      = {
@@ -106,14 +78,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-<<<<<<< HEAD
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
-static const char *prtscrcmd[] = { "flameshot", "gui", NULL};
-=======
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont};
 static const char *termcmd[]  = { "alacritty", NULL };
->>>>>>> parent of 93df505 (go back to st)
 static const char *browser[]  = { "firefox", NULL };
 static const char *discord[]  = { "discord-canary", NULL };
 static const char *files[]  = { "thunar", NULL };
