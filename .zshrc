@@ -34,9 +34,7 @@ export PATH=$PATH:/home/enzom/.spicetify
 # Created by `pipx` on 2024-01-26 22:30:38
 export PATH="$PATH:/home/enzom/.local/bin"
 
-# bun completions
-[ -s "/home/enzom/.bun/_bun" ] && source "/home/enzom/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+if [ -z "$TMUX" ]
+then
+    tmux attach -t TMUX || tmux new -s TMUX
+fi

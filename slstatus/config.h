@@ -65,8 +65,5 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-
-	{ datetime, "[%s] ",           "%F %T" },
-    { disk_free, "[%s] ", "/" },
-    { run_command, "[%s]", "amixer sget Master | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },
+	{ datetime, "%s",           "%F %T" },
 };

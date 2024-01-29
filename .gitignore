@@ -57,8 +57,11 @@ obsidian
 vlc
 Slack
 noisetorch
+<<<<<<< HEAD
 calibre
 chromium
 QtProject.conf
 VirtualBox
 balena-etcher
+=======
+>>>>>>> parent of 93df505 (go back to st)
