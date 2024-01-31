@@ -21,7 +21,7 @@ alias tmuxrc="nvim ~/.tmux.conf"
 alias edscript="nvim ~/.config/scripts/"
 
 ## Move all config files into .config folder
-alias upd="cp ~/.zshrc ~/.config && cp ~/.tmux.conf ~/.config && cp ~/.xinitrc ~/.config/ && cp -r ~/.dwm ~/.config"
+alias upd="cp ~/.zshrc ~/.config && cp ~/.tmux.conf ~/.config && cp ~/.Xresources ~/.config && cp ~/.xinitrc ~/.config/ && cp -r ~/.dwm ~/.config"
 
 ## Custom scripts
 alias p=". ~/.config/scripts/pj.sh"
