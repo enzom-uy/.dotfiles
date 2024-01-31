@@ -6,7 +6,9 @@ default_border pixel 2
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec_always --no-startup-id xrdb ~/.Xresources
+exec --no-startup-id redshift-gtk
+exec --no-startup-id xrdb ~/.Xresources
+
 exec_always --no-startup-id noisetorch -i alsa_output.pci-0000_09_00.4.analog-stereo
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id picom &
