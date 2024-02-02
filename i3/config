@@ -13,7 +13,7 @@ exec_always --no-startup-id noisetorch -i alsa_output.pci-0000_09_00.4.analog-st
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id picom &
 exec_always --no-startup-id xset r rate 200 30 &
-exec_always  ~/.fehbg &
+exec_always --no-startup-id  ~/.fehbg
 
 exec --no-startup-id nm-applet
 
