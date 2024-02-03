@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim="nvim"
 alias so="source ~/.zshrc"
-alias syu="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm"
+alias syu="sudo apt-get update -y && sudo apt-get upgrade -y"
 alias lg="lazygit -d"
 alias d="cd ~/dev/"
 alias cl="xprop WM_CLASS"
@@ -33,3 +33,18 @@ export PATH=$PATH:/home/enzom/.spicetify
 
 # Created by `pipx` on 2024-01-26 22:30:38
 export PATH="$PATH:/home/enzom/.local/bin"
+
+# pnpm
+export PNPM_HOME="/home/enzom/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# bun completions
+[ -s "/home/enzom/.bun/_bun" ] && source "/home/enzom/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
