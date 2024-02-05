@@ -103,11 +103,11 @@ mode "resize" {
 }
 
 # class                 border  backgr. text    indicator child_border
-client.focused #555555 #555555 #ffffff #2e9ef4     #8A6B76
+client.focused #555555 #555555 #ffffff #2e9ef4     #8ABEB7
 
 bindsym $mod+r mode "resize"
 
 include keymaps.conf
 
-gaps outer 0
-gaps inner 6
+gaps outer 2
+gaps inner 2
