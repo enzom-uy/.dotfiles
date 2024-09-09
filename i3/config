@@ -211,7 +211,7 @@ exec_always --no-startup-id PULSE_LATENCY_MSEC 5000
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dex --autostart --environment i3
 
-exec_always sleep 1 && feh --bg-max ~/Pictures/wallpapers/*
+exec --no-startup-id --bg-max "~/Pictures/wallpapers/safe-wallhaven-3ljjwd.png"
 
 exec --no-startup-id /usr/bin/dunst
 

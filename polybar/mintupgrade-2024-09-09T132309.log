@@ -1,0 +1,295 @@
+
+Running check 'Phase 1: Preparation'
+=================
+APT Repositories:
+=================
+Repos:
+  No active apt repos in: /etc/apt/sources.list
+  Active apt repos in: /etc/apt/sources.list.d/home:justkidding.list
+    1: deb http://download.opensuse.org/repositories/home:/justkidding/xUbuntu_22.04/ /
+  Active apt repos in: /etc/apt/sources.list.d/i3-autobuild.list
+    1: deb https://baltocdn.com/i3-window-manager/i3/i3-autobuild-ubuntu/ all main
+  Active apt repos in: /etc/apt/sources.list.d/longsleep-golang-backports-jammy.list
+    1: deb [signed-by=/etc/apt/keyrings/longsleep-golang-backports-jammy.gpg] https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu jammy main
+    2: deb-src [signed-by=/etc/apt/keyrings/longsleep-golang-backports-jammy.gpg] https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu jammy main
+  Active apt repos in: /etc/apt/sources.list.d/official-package-repositories.list
+    1: deb https://mirror.ufscar.br/mint-archive virginia main upstream import backport
+    2: deb http://sft.if.usp.br/ubuntu jammy main restricted universe multiverse
+    3: deb http://sft.if.usp.br/ubuntu jammy-updates main restricted universe multiverse
+    4: deb http://sft.if.usp.br/ubuntu jammy-backports main restricted universe multiverse
+    5: deb http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+  Active apt repos in: /etc/apt/sources.list.d/official-source-repositories.list
+    1: deb-src https://mirror.ufscar.br/mint-archive virginia main upstream import backport
+    2: deb-src http://sft.if.usp.br/ubuntu jammy main restricted universe multiverse
+    3: deb-src http://sft.if.usp.br/ubuntu jammy-updates main restricted universe multiverse
+    4: deb-src http://sft.if.usp.br/ubuntu jammy-backports main restricted universe multiverse
+    5: deb-src http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+  Active apt repos in: /etc/apt/sources.list.d/tailscale.list
+    1: deb [signed-by=/usr/share/keyrings/tailscale-archive-keyring.gpg] https://pkgs.tailscale.com/stable/ubuntu jammy main
+  Active apt repos in: /etc/apt/sources.list.d/wezterm.list
+    1: deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *
+=================
+
+Running check 'Linux Mint version'
+Check succeeded:  Linux Mint version
+
+Running check 'Power source'
+Check succeeded:  Power source
+
+Running check 'APT cache'
+rm -rf /var/lib/apt/lists/*
+DEBIAN_PRIORITY=critical apt-get update
+Ign:1 https://mirror.ufscar.br/mint-archive virginia InRelease
+Get:2 https://mirror.ufscar.br/mint-archive virginia Release [24,1 kB]
+Get:3 https://baltocdn.com/i3-window-manager/i3/i3-autobuild-ubuntu all InRelease [7.599 B]
+Get:4 https://mirror.ufscar.br/mint-archive virginia Release.gpg [833 B]
+Get:5 https://baltocdn.com/i3-window-manager/i3/i3-autobuild-ubuntu all/main i386 Packages [56,1 kB]
+Get:6 https://baltocdn.com/i3-window-manager/i3/i3-autobuild-ubuntu all/main amd64 Packages [62,5 kB]
+Get:7 https://mirror.ufscar.br/mint-archive virginia/main Sources [18,6 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:9 https://mirror.ufscar.br/mint-archive virginia/upstream Sources [14,9 kB]
+Get:10 https://mirror.ufscar.br/mint-archive virginia/import Sources [3.455 B]
+Get:11 https://mirror.ufscar.br/mint-archive virginia/backport Sources [32,4 kB]
+Get:12 https://pkgs.tailscale.com/stable/ubuntu jammy InRelease
+Get:13 https://apt.fury.io/wez * InRelease
+Get:14 https://mirror.ufscar.br/mint-archive virginia/main amd64 Packages [18,5 kB]
+Get:15 http://sft.if.usp.br/ubuntu jammy InRelease [270 kB]
+Get:16 https://mirror.ufscar.br/mint-archive virginia/main i386 Packages [17,9 kB]
+Get:17 https://mirror.ufscar.br/mint-archive virginia/upstream amd64 Packages [48,9 kB]
+Get:18 https://pkgs.tailscale.com/stable/ubuntu jammy/main amd64 Packages [11,5 kB]
+Get:19 https://apt.fury.io/wez */* amd64 Packages [23,4 kB]
+Get:20 https://mirror.ufscar.br/mint-archive virginia/upstream i386 Packages [14,6 kB]
+Get:21 http://download.opensuse.org/repositories/home:/justkidding/xUbuntu_22.04  InRelease [1.533 B]
+Get:22 https://mirror.ufscar.br/mint-archive virginia/import i386 Packages [3.678 B]
+Get:23 https://mirror.ufscar.br/mint-archive virginia/import amd64 Packages [8.338 B]
+Get:24 https://mirror.ufscar.br/mint-archive virginia/backport amd64 Packages [54,9 kB]
+Get:25 http://sft.if.usp.br/ubuntu jammy-updates InRelease [128 kB]
+Get:26 http://sft.if.usp.br/ubuntu jammy-backports InRelease [127 kB]
+Get:27 https://pkgs.tailscale.com/stable/ubuntu jammy/main i386 Packages [11,1 kB]
+Get:28 https://pkgs.tailscale.com/stable/ubuntu jammy/main all Packages [354 B]
+Get:29 http://sft.if.usp.br/ubuntu jammy/universe Sources [17,8 MB]
+Get:30 https://mirror.ufscar.br/mint-archive virginia/backport i386 Packages [8.307 B]
+Get:31 http://security.ubuntu.com/ubuntu jammy-security/universe Sources [209 kB]
+Get:32 http://download.opensuse.org/repositories/home:/justkidding/xUbuntu_22.04  Packages [822 B]
+Get:33 https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu jammy InRelease [18,3 kB]
+Get:34 https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu jammy/main Sources [4.504 B]
+Get:35 https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu jammy/main amd64 Packages [5.848 B]
+Get:36 https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu jammy/main i386 Packages [4.808 B]
+Get:37 https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu jammy/main Translation-en [2.144 B]
+Get:38 http://security.ubuntu.com/ubuntu jammy-security/main Sources [294 kB]
+Get:39 http://security.ubuntu.com/ubuntu jammy-security/multiverse Sources [10,5 kB]
+Get:40 http://security.ubuntu.com/ubuntu jammy-security/restricted Sources [68,8 kB]
+Get:41 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [533 kB]
+Get:42 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1.771 kB]
+Get:43 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [291 kB]
+Get:44 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [43,2 kB]
+Get:45 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [13,3 kB]
+Get:46 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2.327 kB]
+Get:47 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [37,7 kB]
+Get:48 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [400 kB]
+Get:49 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 DEP-11 Metadata [208 B]
+Get:50 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [584 B]
+Get:51 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [901 kB]
+Get:52 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [626 kB]
+Get:53 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [176 kB]
+Get:54 http://sft.if.usp.br/ubuntu jammy/main Sources [1.340 kB]
+Get:55 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [89,2 kB]
+Get:56 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [19,2 kB]
+Get:57 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37,2 kB]
+Get:58 http://security.ubuntu.com/ubuntu jammy-security/multiverse i386 Packages [1.356 B]
+Get:59 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7.588 B]
+Get:60 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 DEP-11 Metadata [208 B]
+Get:61 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [228 B]
+Get:62 http://sft.if.usp.br/ubuntu jammy/restricted Sources [23,7 kB]
+Get:63 http://sft.if.usp.br/ubuntu jammy/multiverse Sources [304 kB]
+Get:64 http://sft.if.usp.br/ubuntu jammy/main i386 Packages [1.040 kB]
+Get:65 http://sft.if.usp.br/ubuntu jammy/main amd64 Packages [1.395 kB]
+Get:66 http://sft.if.usp.br/ubuntu jammy/main Translation-en [510 kB]
+Get:67 http://sft.if.usp.br/ubuntu jammy/main amd64 DEP-11 Metadata [423 kB]
+Get:68 http://sft.if.usp.br/ubuntu jammy/main amd64 c-n-f Metadata [30,3 kB]
+Get:69 http://sft.if.usp.br/ubuntu jammy/restricted i386 Packages [30,4 kB]
+Get:70 http://sft.if.usp.br/ubuntu jammy/restricted amd64 Packages [129 kB]
+Get:71 http://sft.if.usp.br/ubuntu jammy/restricted Translation-en [18,6 kB]
+Get:72 http://sft.if.usp.br/ubuntu jammy/restricted amd64 c-n-f Metadata [488 B]
+Get:73 http://sft.if.usp.br/ubuntu jammy/universe amd64 Packages [14,1 MB]
+Get:74 http://sft.if.usp.br/ubuntu jammy/universe i386 Packages [7.474 kB]
+Get:75 http://sft.if.usp.br/ubuntu jammy/universe Translation-en [5.652 kB]
+Get:76 http://sft.if.usp.br/ubuntu jammy/universe amd64 DEP-11 Metadata [3.559 kB]
+Get:77 http://sft.if.usp.br/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:78 http://sft.if.usp.br/ubuntu jammy/multiverse i386 Packages [112 kB]
+Get:79 http://sft.if.usp.br/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:80 http://sft.if.usp.br/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:81 http://sft.if.usp.br/ubuntu jammy/multiverse amd64 DEP-11 Metadata [42,1 kB]
+Get:82 http://sft.if.usp.br/ubuntu jammy/multiverse amd64 c-n-f Metadata [8.372 B]
+Get:83 http://sft.if.usp.br/ubuntu jammy-updates/multiverse Sources [19,5 kB]
+Get:84 http://sft.if.usp.br/ubuntu jammy-updates/main Sources [514 kB]
+Get:85 http://sft.if.usp.br/ubuntu jammy-updates/restricted Sources [72,4 kB]
+Get:86 http://sft.if.usp.br/ubuntu jammy-updates/universe Sources [358 kB]
+Get:87 http://sft.if.usp.br/ubuntu jammy-updates/main i386 Packages [690 kB]
+Get:88 http://sft.if.usp.br/ubuntu jammy-updates/main amd64 Packages [1.988 kB]
+Get:89 http://sft.if.usp.br/ubuntu jammy-updates/main Translation-en [349 kB]
+Get:90 http://sft.if.usp.br/ubuntu jammy-updates/main amd64 DEP-11 Metadata [103 kB]
+Get:91 http://sft.if.usp.br/ubuntu jammy-updates/main amd64 c-n-f Metadata [17,8 kB]
+Get:92 http://sft.if.usp.br/ubuntu jammy-updates/restricted amd64 Packages [2.386 kB]
+Get:93 http://sft.if.usp.br/ubuntu jammy-updates/restricted i386 Packages [39,3 kB]
+Get:94 http://sft.if.usp.br/ubuntu jammy-updates/restricted Translation-en [410 kB]
+Get:95 http://sft.if.usp.br/ubuntu jammy-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:96 http://sft.if.usp.br/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [616 B]
+Get:97 http://sft.if.usp.br/ubuntu jammy-updates/universe amd64 Packages [1.123 kB]
+Get:98 http://sft.if.usp.br/ubuntu jammy-updates/universe i386 Packages [731 kB]
+Get:99 http://sft.if.usp.br/ubuntu jammy-updates/universe Translation-en [261 kB]
+Get:100 http://sft.if.usp.br/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [341 kB]
+Get:101 http://sft.if.usp.br/ubuntu jammy-updates/universe amd64 c-n-f Metadata [26,1 kB]
+Get:102 http://sft.if.usp.br/ubuntu jammy-updates/multiverse i386 Packages [4.752 B]
+Get:103 http://sft.if.usp.br/ubuntu jammy-updates/multiverse amd64 Packages [43,3 kB]
+Get:104 http://sft.if.usp.br/ubuntu jammy-updates/multiverse Translation-en [10,8 kB]
+Get:105 http://sft.if.usp.br/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:106 http://sft.if.usp.br/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [444 B]
+Get:107 http://sft.if.usp.br/ubuntu jammy-backports/universe Sources [10,8 kB]
+Get:108 http://sft.if.usp.br/ubuntu jammy-backports/main Sources [8.236 B]
+Get:109 http://sft.if.usp.br/ubuntu jammy-backports/main i386 Packages [59,9 kB]
+Get:110 http://sft.if.usp.br/ubuntu jammy-backports/main amd64 Packages [67,8 kB]
+Get:111 http://sft.if.usp.br/ubuntu jammy-backports/main Translation-en [11,1 kB]
+Get:112 http://sft.if.usp.br/ubuntu jammy-backports/main amd64 DEP-11 Metadata [6.772 B]
+Get:113 http://sft.if.usp.br/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:114 http://sft.if.usp.br/ubuntu jammy-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:115 http://sft.if.usp.br/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:116 http://sft.if.usp.br/ubuntu jammy-backports/universe i386 Packages [17,3 kB]
+Get:117 http://sft.if.usp.br/ubuntu jammy-backports/universe amd64 Packages [28,8 kB]
+Get:118 http://sft.if.usp.br/ubuntu jammy-backports/universe Translation-en [16,5 kB]
+Get:119 http://sft.if.usp.br/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [21,1 kB]
+Get:120 http://sft.if.usp.br/ubuntu jammy-backports/universe amd64 c-n-f Metadata [672 B]
+Get:121 http://sft.if.usp.br/ubuntu jammy-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Get:122 http://sft.if.usp.br/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 73,4 MB in 47s (1.561 kB/s)
+Reading package lists...
+W: https://baltocdn.com/i3-window-manager/i3/i3-autobuild-ubuntu/dists/all/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+Check succeeded:  APT cache
+
+Running check 'System snapshots'
+
+Fixing check 'System snapshots'
+Check succeeded:  System snapshots
+
+Running check 'Held packages'
+Check succeeded:  Held packages
+
+Running check 'Package repositories'
+
+Fixing check 'Package repositories'
+Mint repository last modified on 2024-09-05 11:30:33
+
+Fixing check 'Package repositories'
+Mint repository last modified on 2024-09-05 11:30:33
+
+Fixing check 'Package repositories'
+Mint repository last modified on 2024-09-05 11:30:33
+Check succeeded:  Package repositories
+
+Running check 'Foreign packages'
+
+Running check 'Foreign packages'
+
+Fixing check 'Foreign packages'
+DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical apt-get install --allow-downgrades -fyq -o Dpkg::Options::="--force-confold" -o Dpkg::Options::="--force-overwrite" cpupower-gui=0.7.2-2 golang-go=2:1.18~0ubuntu2 golang-src=2:1.18~0ubuntu2 i3=4.20.1-1 i3-wm=4.20.1-1
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  golang-1.23-go golang-1.23-src kitty-doc kitty-terminfo libpython2-stdlib
+  libpython2.7-minimal libpython2.7-stdlib python-pkg-resources
+  python-setuptools python2 python2-minimal python2.7 python2.7-minimal
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  golang-1.18-go golang-1.18-src
+Suggested packages:
+  lxqt-policykit lxsession bzr | brz mercurial subversion
+The following NEW packages will be installed:
+  golang-1.18-go golang-1.18-src
+The following packages will be DOWNGRADED:
+  cpupower-gui golang-go golang-src i3 i3-wm
+0 upgraded, 2 newly installed, 5 downgraded, 0 to remove and 4 not upgraded.
+Need to get 76,5 MB/77,3 MB of archives.
+After this operation, 436 MB of additional disk space will be used.
+Get:1 http://sft.if.usp.br/ubuntu jammy/universe amd64 cpupower-gui amd64 0.7.2-2 [17,9 kB]
+Get:2 http://sft.if.usp.br/ubuntu jammy/main amd64 golang-go amd64 2:1.18~0ubuntu2 [41,8 kB]
+Get:3 http://sft.if.usp.br/ubuntu jammy/main amd64 golang-src all 2:1.18~0ubuntu2 [4.438 B]
+Get:4 http://sft.if.usp.br/ubuntu jammy/universe amd64 i3 amd64 4.20.1-1 [1.950 B]
+Get:5 https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu jammy/main amd64 golang-1.18-src all 1.18.5-1longsleep1+focal [15,6 MB]
+Get:6 https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu jammy/main amd64 golang-1.18-go amd64 1.18.5-1longsleep1+focal [60,8 MB]
+Fetched 76,5 MB in 4min 41s (272 kB/s)
+dpkg: warning: downgrading cpupower-gui from 1.0.0-1 to 0.7.2-2
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 641523 files and directories currently installed.)
+Preparing to unpack .../0-cpupower-gui_0.7.2-2_amd64.deb ...
+Unpacking cpupower-gui (0.7.2-2) over (1.0.0-1) ...
+dpkg: warning: unable to delete old directory '/etc/cpupower_gui.d': Directory not empty
+Selecting previously unselected package golang-1.18-src.
+Preparing to unpack .../1-golang-1.18-src_1.18.5-1longsleep1+focal_all.deb ...
+Unpacking golang-1.18-src (1.18.5-1longsleep1+focal) ...
+Selecting previously unselected package golang-1.18-go.
+Preparing to unpack .../2-golang-1.18-go_1.18.5-1longsleep1+focal_amd64.deb ...
+Unpacking golang-1.18-go (1.18.5-1longsleep1+focal) ...
+dpkg: warning: downgrading golang-go:amd64 from 2:1.23~0longsleep1 to 2:1.18~0ubuntu2
+Preparing to unpack .../3-golang-go_2%3a1.18~0ubuntu2_amd64.deb ...
+Unpacking golang-go:amd64 (2:1.18~0ubuntu2) over (2:1.23~0longsleep1) ...
+dpkg: warning: downgrading golang-src from 2:1.23~0longsleep1 to 2:1.18~0ubuntu2
+Preparing to unpack .../4-golang-src_2%3a1.18~0ubuntu2_all.deb ...
+Unpacking golang-src (2:1.18~0ubuntu2) over (2:1.23~0longsleep1) ...
+dpkg: warning: downgrading i3 from 4.22-1+g4.22-35-g2a4576be1 to 4.20.1-1
+Preparing to unpack .../5-i3_4.20.1-1_amd64.deb ...
+Unpacking i3 (4.20.1-1) over (4.22-1+g4.22-35-g2a4576be1) ...
+dpkg: warning: downgrading i3-wm from 4.22-1+g4.22-35-g2a4576be1 to 4.20.1-1
+Preparing to unpack .../6-i3-wm_4.20.1-1_amd64.deb ...
+Unpacking i3-wm (4.20.1-1) over (4.22-1+g4.22-35-g2a4576be1) ...
+Setting up cpupower-gui (0.7.2-2) ...
+Setting up i3-wm (4.20.1-1) ...
+Installing new version of config file /etc/i3/config ...
+Installing new version of config file /etc/i3/config.keycodes ...
+Setting up golang-1.18-src (1.18.5-1longsleep1+focal) ...
+Setting up golang-src (2:1.18~0ubuntu2) ...
+Setting up golang-1.18-go (1.18.5-1longsleep1+focal) ...
+Setting up i3 (4.20.1-1) ...
+Setting up golang-go:amd64 (2:1.18~0ubuntu2) ...
+Processing triggers for libglib2.0-0:amd64 (2.72.4-0ubuntu2.3) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for dbus (1.12.20-2ubuntu4.1) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.26+mint3+victoria) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for doc-base (0.11.1) ...
+Processing 1 removed doc-base file, 1 added doc-base file...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+
+Fixing check 'Foreign packages'
+DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical apt-get install --allow-downgrades -fyq -o Dpkg::Options::="--force-confold" -o Dpkg::Options::="--force-overwrite" golang-1.18-go=1.18.1-1ubuntu1.1 golang-1.18-src=1.18.1-1ubuntu1.1
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  golang-1.23-go golang-1.23-src kitty-doc kitty-terminfo libpython2-stdlib
+  libpython2.7-minimal libpython2.7-stdlib python-pkg-resources
+  python-setuptools python2 python2-minimal python2.7 python2.7-minimal
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  bzr | brz mercurial subversion
+The following packages will be DOWNGRADED:
+  golang-1.18-go golang-1.18-src
+0 upgraded, 0 newly installed, 2 downgraded, 0 to remove and 6 not upgraded.
+Need to get 82,3 MB of archives.
+After this operation, 106 kB disk space will be freed.
+Get:1 http://sft.if.usp.br/ubuntu jammy-updates/main amd64 golang-1.18-go amd64 1.18.1-1ubuntu1.1 [66,0 MB]
+Get:2 http://sft.if.usp.br/ubuntu jammy-updates/main amd64 golang-1.18-src all 1.18.1-1ubuntu1.1 [16,2 MB]
+Fetched 82,3 MB in 36s (2.300 kB/s)
+dpkg: warning: downgrading golang-1.18-go from 1.18.5-1longsleep1+focal to 1.18.1-1ubuntu1.1
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 654658 files and directories currently installed.)
+Preparing to unpack .../golang-1.18-go_1.18.1-1ubuntu1.1_amd64.deb ...
+Unpacking golang-1.18-go (1.18.1-1ubuntu1.1) over (1.18.5-1longsleep1+focal) ...
+dpkg: warning: downgrading golang-1.18-src from 1.18.5-1longsleep1+focal to 1.18.1-1ubuntu1.1
+Preparing to unpack .../golang-1.18-src_1.18.1-1ubuntu1.1_all.deb ...
+Unpacking golang-1.18-src (1.18.1-1ubuntu1.1) over (1.18.5-1longsleep1+focal) ...
+Setting up golang-1.18-src (1.18.1-1ubuntu1.1) ...
+Setting up golang-1.18-go (1.18.1-1ubuntu1.1) ...
+Check succeeded:  Foreign packages
+
+Running check 'Orphan packages'
+mintupgrade-inhibit-power: no process found
