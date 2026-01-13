@@ -1,0 +1,20 @@
+[terminal.shell]
+program = "/bin/zsh"
+args = ["--login"]
+
+[window]
+opacity = 0.9
+blur = false
+
+[general]
+live_config_reload = true
+import = [
+ "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+size = 12
+
+[selection]
+save_to_clipboard = true
