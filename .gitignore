@@ -141,3 +141,5 @@ kxkbrc
 libinput-gestures.conf
 monitors.xml
 monitors.xml~
+UNIGINE
+systemd/user/graphical-session.target.wants
