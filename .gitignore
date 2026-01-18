@@ -143,3 +143,4 @@ monitors.xml
 monitors.xml~
 UNIGINE
 systemd/user/graphical-session.target.wants
+lvim
