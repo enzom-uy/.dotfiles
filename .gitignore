@@ -144,3 +144,8 @@ monitors.xml~
 UNIGINE
 systemd/user/graphical-session.target.wants
 lvim
+bolt-launcher
+mozilla/firefox
+speech-dispatcher
+wintc
+zed
