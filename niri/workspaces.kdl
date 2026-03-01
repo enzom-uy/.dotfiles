@@ -1,0 +1,10 @@
+workspace "disc" {
+    open-on-output "DP-1"
+}
+
+window-rule {
+    match app-id="Discord"
+    open-maximized true
+    open-on-workspace "disc"
+}
+

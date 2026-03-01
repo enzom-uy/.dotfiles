@@ -13,7 +13,7 @@ WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" 
 
 # Aplicar el wallpaper seleccionado (sin transición, resize fill para encajar)
 if [[ -n "$WALLPAPER" ]]; then
-  swww img "$WALLPAPER" --resize crop --transition-type none
+  swww img "$WALLPAPER" --resize fit --transition-type none
 else
   echo "No se encontró un wallpaper válido en $WALLPAPER_DIR"
 fi

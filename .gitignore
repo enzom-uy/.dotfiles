@@ -149,3 +149,10 @@ mozilla/firefox
 speech-dispatcher
 wintc
 zed
+/.wrangler
+/cava
+/gpu-screen-recorder
+/net.imput.helium
+/opencode
+/okularrc
+/okularpartrc
