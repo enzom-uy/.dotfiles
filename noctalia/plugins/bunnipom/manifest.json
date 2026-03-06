@@ -1,17 +1,19 @@
 {
-  "id": "weather-indicator",
-  "name": "Weather Indicator",
-  "version": "1.0.10",
+  "id": "bunnipom",
+  "name": "Bunni Pom",
+  "version": "1.0.9",
   "minNoctaliaVersion": "4.3.0",
   "author": "Sovereign",
   "license": "MIT",
-  "repository": "https://github.com/noctalia-dev/noctalia-plugins",
-  "description": "Shows the current weather condition and tempurature.",
+  "repository": "https://github.com/enzom-uy/noctalia-plugins",
+  "description": "Shows the current Bashbunni's pom util state",
   "tags": ["Bar"],
   "entryPoints": {
     "barWidget": "BarWidget.qml",
     "panel": "Panel.qml",
-    "settings": "Settings.qml"
+    "settings": "Settings.qml",
+    "main": "Main.qml",
+    "launcherProvider": "LauncherProvider.qml"
   },
   "dependencies": {
     "plugins": []
@@ -22,6 +24,7 @@
       "showTempUnit": true,
       "showConditionIcon": true,
       "tooltipOption": "everything",
+      "commandPrefix": "bunnipom",
       "customColor": "none"
     }
   }

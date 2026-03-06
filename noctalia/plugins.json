@@ -7,6 +7,10 @@
         }
     ],
     "states": {
+        "bunnipom": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/enzom/noctalia-plugins"
+        },
         "weather-indicator": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
