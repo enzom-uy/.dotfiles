@@ -1,6 +1,6 @@
 [terminal.shell]
-program = "/bin/zsh"
-args = ["--login"]
+program = "/usr/bin/zsh"
+args = ["-l"]
 
 [window]
 opacity = 0.9
