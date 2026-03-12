@@ -31,6 +31,9 @@ export PATH="$HOME/.local/bin:$PATH"
 # Windows relay (WSL)
 export PATH="/mnt/c/npiperelay.exe:$PATH"
 
+# opencode
+export PATH="/home/enzom/.opencode/bin:$PATH"
+
 # NVM lazy load
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
@@ -77,7 +80,6 @@ alias c=". ~/.config/scripts/cfgs.sh"
 alias bg=". ~/.config/scripts/randombg.sh"
 
 source $HOME/.zshrc-scripts
-eval "$(zoxide init zsh)"
 
 # pnpm
 export PNPM_HOME="/home/enzom/.local/share/pnpm"
@@ -102,5 +104,4 @@ pomodoro () {
 alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
 
-# opencode
-export PATH=/home/enzom/.opencode/bin:$PATH
+eval "$(zoxide init zsh)"
