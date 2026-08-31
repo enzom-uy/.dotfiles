@@ -1,0 +1,16 @@
+fzf-pj() {
+
+    # Usa fzf para seleccionar la carpeta
+    selected_path=$(find /home/enzom/dev -maxdepth 1 -type d | fzf)
+
+    # Verifica si se seleccionó algo
+    if [ -n "$selected_path" ]; then
+        # Mueve el directorio actual a la carpeta seleccionada
+        eval "cd '$selected_path'"
+    fi
+    zle reset-prompt
+}
+
+zle -N fzf-pj
+
+bindkey '^P' fzf-pj

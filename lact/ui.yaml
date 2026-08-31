@@ -1,0 +1,9 @@
+selected_tab: thermals_page
+selected_gpu: 10DE:220A-3842:4861-0000:07:00.0
+stats_poll_interval_ms: 500
+gpus: {}
+theme: automatic
+color_scheme: Auto
+window_size:
+  width: 1267
+  height: 1389
